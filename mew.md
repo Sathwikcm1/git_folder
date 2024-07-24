@@ -1,2 +1,0 @@
-#wasssupp beijing
-meeeeew
