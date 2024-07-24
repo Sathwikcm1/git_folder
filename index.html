@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="mode-switcher">
+            <button id="dark-mode">Dark Mode</button>
+            <button id="light-mode">Light Mode</button>
+        </div>
+        <input type="text" id="entry-field" disabled>
+        <div class="buttons">
+            <button id="button-1" onclick="appendValue('1')">1</button>
+            <button id="button-2" onclick="appendValue('2')">2</button>
+            <button id="button-3" onclick="appendValue('3')">3</button>
+            <button id="button-4" onclick="appendValue('4')">4</button>
+            <button id="button-5" onclick="appendValue('5')">5</button>
+            <button id="button-6" onclick="appendValue('6')">6</button>
+            <button id="button-7" onclick="appendValue('7')">7</button>
+            <button id="button-8" onclick="appendValue('8')">8</button>
+            <button id="button-9" onclick="appendValue('9')">9</button>
+            <button id="button-0" onclick="appendValue('0')">0</button>
+            <button id="button-add" onclick="appendValue('+')">+</button>
+            <button id="button-subtract" onclick="appendValue('-')">-</button>
+            <button id="button-multiply" onclick="appendValue('*')">*</button>
+            <button id="button-divide" onclick="appendValue('/')">/</button>
+            <button id="button-equals" onclick="calculateResult()">=</button>
+            <button id="button-clear" onclick="clearEntryField()">Clear</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
